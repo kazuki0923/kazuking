@@ -1,4 +1,4 @@
-package curriculumB; // パッケージ名がcurriculum_Bになっているか確認！
+package curriculumB; // パッケージ名がcurriculumBになっているか確認！
 
 import java.util.Scanner; // Q7でユーザー入力を受け付けるために必要です
 
