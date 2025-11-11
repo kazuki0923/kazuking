@@ -25,13 +25,13 @@ public class Qes1_13 {
         letters = "ハロー";
         isBoolean = true;
 
-        // Q3 コンソール出力
+        // Q3 コンソール出力（修正版）
         System.out.println(byteNum + shortNum + intNum + longNum);        // 11110
-        System.out.println(byteNum * 2);                                  // 20
+        System.out.println(floatNum + doubleNum);                         // 20.0
         System.out.println(letter + " " + letters + " " + isBoolean);     // a ハロー true
-        System.out.println(byteNum + shortNum + intNum + longNum + 20);   // 11130
+        System.out.println(byteNum + shortNum + intNum + longNum + (int)(floatNum + doubleNum)); // 11130
         System.out.println(byteNum * shortNum * intNum * longNum);        // 10000000000
-        System.out.println(doubleNum / 100);                              // 0.105
+        System.out.println(doubleNum / shortNum);                         // 0.105
         System.out.println(byteNum - shortNum);                           // -90
 
         // Q4 文字列と数値の結合修正
@@ -103,5 +103,4 @@ public class Qes1_13 {
         System.out.println(ageInt >= 25 || heightInt >= 160);
     }
 }
-
 
