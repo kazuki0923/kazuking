@@ -3,15 +3,15 @@ package curriculum_A;
 public class Qes1_13 {
     public static void main(String[] args) {
 
-        // Q1 各型の変数を宣言・初期化
+        // Q1 各型の変数を宣言・初期化（初期値を正しく修正）
         byte byteNum = 0;
         short shortNum = 0;
         int intNum = 0;
         long longNum = 0L;
         float floatNum = 0.0f;
         double doubleNum = 0.0;
-        char letter = ' ';
-        String letters = "";
+        char letter = '\u0000'; // char型の初期値
+        String letters = null;  // String型の初期値
         boolean isBoolean = false;
 
         // Q2 各変数に値を代入
