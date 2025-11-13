@@ -36,11 +36,8 @@ public class Question5 {
     // Q4 : 次の2つのクラスを作成し、Main クラスから Greeting クラスのメソッドを呼び出すようにしてください。
     // ・Greeting.java（別クラス）→ sayHello() メソッドで "こんにちは！" を表示
     // ・Main.java → Greeting クラスを使って sayHello() を呼び出す
-    static class Greeting {
-        public void sayHello() {
-            System.out.println("こんにちは！");
-        }
-    }
+   
+    // 別クラス使用
 
     // Q5 : 次の2つのクラスを作成し、以下の出力になるように作成してください。
     // ・this と setter と getter とフィールドを使う
@@ -50,35 +47,11 @@ public class Question5 {
     // 動物名：ライオン
     // 体長：2.1m
     // 速度：80km/h
-    static class Animal {
-        private String name;
-        private double length;
-        private int speed;
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public void setLength(double length) {
-            this.length = length;
-        }
-
-        public void setSpeed(int speed) {
-            this.speed = speed;
-        }
-
-        public String getName() {
-            return this.name;
-        }
-
-        public double getLength() {
-            return this.length;
-        }
-
-        public int getSpeed() {
-            return this.speed;
-        }
-    }
+    
+    // 別クラス使用
+    
+   // -------------------------------------------------------------------     
+   
 
     // メインメソッド：Q1〜Q5の処理を順番に呼び出す
     public static void main(String[] args) {
