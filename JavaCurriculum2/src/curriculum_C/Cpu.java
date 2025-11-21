@@ -3,11 +3,11 @@ package curriculum_C;
 import java.util.Random;
 
 public class Cpu {
+    private Random rand = new Random(); // 1度だけ生成
     private int hand;
 
-    public void setRandomHand() {
-        Random rand = new Random();
-        this.hand = rand.nextInt(3); // 0〜2の乱数
+    public void setHand() {
+        this.hand = rand.nextInt(3); // 0～2
     }
 
     public int getHand() {
