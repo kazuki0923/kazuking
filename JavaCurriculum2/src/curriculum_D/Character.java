@@ -1,10 +1,10 @@
 package curriculum_D;
 
 public class Character {
-    public String name;
-    public int hp;
-    public int at;
-    public int sp;
+    private String name;
+    private int hp;
+    private int at;
+    private int sp;
 
     public Character(String name, int hp, int at, int sp) {
         this.name = name;
@@ -13,12 +13,19 @@ public class Character {
         this.sp = sp;
     }
 
-    public void attack(Character target) {
-        target.hp -= this.at;
-        System.out.println(this.name + " attacks " + target.name + " for " + this.at + " damage!");
+    public String getName() { return name; }
+    public int getHp() { return hp; }
+    public int getAt() { return at; }
+    public int getSp() { return sp; }
+
+    public void takeDamage(int damage) {
+        hp -= damage;
+        if (hp < 0) hp = 0;
     }
 
-    public boolean isAlive() {
-        return this.hp > 0;
+    public int attack(Character defender) {
+        int damage = this.at;
+        defender.takeDamage(damage);
+        return damage;
     }
 }
